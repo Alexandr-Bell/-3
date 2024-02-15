@@ -1,20 +1,31 @@
-from turtle import *
+import turtle
+# Рисунок мыши "примитивно"
+t = turtle.Turtle()
 
-my_turtle = Turtle()
-my_turtle.speed(0)
-my_turtle.screen.setup(1200, 800)
+t.penup()
+t.goto(0, -50)
+t.pendown()
+t.circle(50)
 
-# Нарисовать квадрат
-def draw_rect(t):
-    for x in range(0, 4):
-        t.right(90)
-        t.forward(100)
+t.penup()
+t.goto(-20, 50)
+t.pendown()
+t.circle(20)
 
-# Рисует квадраты в цикле
-for x in range(0, 360):
-    draw_rect(my_turtle)
-    my_turtle.right(1)
+t.penup()
+t.goto(20, 50)
+t.pendown()
+t.circle(20)
 
-# Необходимо, чтобы окно не закрывалось само, а только по клику
-my_turtle.screen.exitonclick()
-my_turtle.screen.mainloop()
+t.penup()
+t.goto(-25, 60)
+t.pendown()
+t.right(90)
+t.circle(25, 180)
+
+t.hideturtle()
+turtle.done()
+t.penup()
+
+
+turtle.done()
