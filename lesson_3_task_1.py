@@ -1,6 +1,5 @@
-from user import User
+my_user = User("Александр", "Иванов")
 
-User1 = User("Александр","Иванов")
-print(User1.first_name)
-print(User1.last_name)
-print("Меня зовут", User1.first_name, User1.last_name)
+my_user.print_first_name()
+my_user.print_last_name()
+my_user.print_full_name()
